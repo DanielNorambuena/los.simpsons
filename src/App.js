@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./Componentes/Header";
+import MiApi from "./Componentes/MiApi";
+
 
 function App() {
+  const [valorBusqueda, setValorBusqueda] = useState("");
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setValorBusqueda={setValorBusqueda}></Header>
+      <MiApi valorBusqueda={valorBusqueda}></MiApi>
     </div>
   );
 }
