@@ -5,9 +5,6 @@ import Button from 'react-bootstrap/Button';
 const Header = ({ setValorBusqueda }) => {
     const [valorCaja, setValorCaja] = useState('');
 
-
-
-
     return (
         <div className='presentacion'>
             <p>Hola señor Thompson...<br />
@@ -18,7 +15,7 @@ const Header = ({ setValorBusqueda }) => {
                     onChange={(e) => setValorCaja(e.target.value)}
                 />
                 <Button variant="primary"
-                className=''
+                    className=''
                     type="submit"
                     onClick={() => setValorBusqueda(valorCaja)}
                 >
@@ -26,12 +23,6 @@ const Header = ({ setValorBusqueda }) => {
                 </Button>
             </div>
             <p className='sub-titulo'>¡Que elegancia la de Francia!</p>
-            <div className='listado'>
-                <Button variant="primary" type="submit">
-                    Lista de Personajes
-                </Button>
-            </div>
-
         </div>
     )
 }

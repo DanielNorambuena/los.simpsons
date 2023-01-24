@@ -9,11 +9,12 @@ body {
 }
 
 .App {
-  display: block;
+  display: flex;
   height: 100vh;
   overflow: hidden;
   margin-left: 5vw;
-  padding-top: 5vw;
+  padding-top: 2vw;
+  flex-direction: column
 }
 
 .presentacion {
@@ -37,8 +38,54 @@ body {
   margin-top: 1vw;
 }
 
-.listado button {
-  background-color: #176198;
-  margin: 0;
+.contenedor {
+  width: 45vw;
+  overflow-x: auto;
+  margin-bottom: 7.5vw;
+  display: block;
 }
 
+.contenedor::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+  background: #2cadd471;
+  border-radius: 4px;
+}
+
+.contenedor::-webkit-scrollbar-track {
+  background: #18609717;
+  border-radius: 4px;
+}
+
+.contenedor-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contenedor-img {
+  width: 35%;
+}
+
+.foto1 {
+  width: 100%;
+}
+
+.foto2 {
+  width: 55%;
+  margin: -160% 0 -9% 20%;
+}
+
+.contenedor-texto {
+  width: 55%;
+  padding: 5%;
+  font-family: 'Vujahday Script', cursive;
+}
+
+.contenedor-texto h3 {
+  color: #186197;
+}

@@ -7,7 +7,6 @@ import MiApi from "./Componentes/MiApi";
 function App() {
   const [valorBusqueda, setValorBusqueda] = useState("");
 
-
   return (
     <div className="App">
       <Header setValorBusqueda={setValorBusqueda}></Header>
